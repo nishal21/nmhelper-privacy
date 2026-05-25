@@ -1,188 +1,566 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy – NmHelper</title>
-  <style>
-    :root {
-      --primary-color: #0050b3;
-      --primary-dark: #003a80;
-      --background: #f4f7fb;
-      --surface: #fff;
-      --text-main: #222b45;
-      --text-light: #6c757d;
-      --border-radius: 14px;
-      --shadow: 0 4px 24px rgba(0, 80, 179, 0.09), 0 1.5px 5px rgba(0,0,0,0.02);
-      --header-gradient: linear-gradient(90deg, #0050b3 40%, #4481eb 100%);
-    }
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
-      background: var(--background);
-      color: var(--text-main);
-      min-height: 100vh;
-      letter-spacing: 0.02em;
-      line-height: 1.7;
-    }
-    header {
-      background: var(--header-gradient);
-      color: #fff;
-      padding: 40px 0 28px 0;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,80,179,0.06);
-      border-bottom-left-radius: var(--border-radius);
-      border-bottom-right-radius: var(--border-radius);
-      margin-bottom: 30px;
-    }
-    h1 {
-      margin: 0 0 10px 0;
-      font-size: 2.6rem;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    }
-    header p {
-      margin: 0;
-      font-size: 1.1rem;
-      color: #e3ecfa;
-      font-weight: 500;
-    }
-    main {
-      max-width: 720px;
-      margin: 0 auto 50px auto;
-      background: var(--surface);
-      padding: 36px 36px 28px 36px;
-      border-radius: var(--border-radius);
-      box-shadow: var(--shadow);
-      position: relative;
-    }
-    section {
-      margin-bottom: 34px;
-    }
-    h2 {
-      color: var(--primary-color);
-      font-size: 1.35rem;
-      font-weight: 600;
-      margin-bottom: 9px;
-      margin-top: 0;
-      border-left: 4px solid var(--primary-color);
-      padding-left: 10px;
-      letter-spacing: 0.01em;
-      background: rgba(68,129,235,0.05);
-      border-radius: 2px;
-      display: inline-block;
-    }
-    ul {
-      margin: 12px 0 12px 20px;
-      padding: 0;
-      list-style: disc inside;
-      color: var(--text-main);
-    }
-    li {
-      margin-bottom: 7px;
-      font-size: 1.05rem;
-    }
-    p {
-      margin: 6px 0 16px 0;
-      color: var(--text-main);
-      font-size: 1.06rem;
-    }
-    strong {
-      color: var(--primary-dark);
-      font-weight: 600;
-    }
-    footer {
-      text-align: center;
-      font-size: 15px;
-      color: var(--text-light);
-      padding: 36px 10px 20px 10px;
-      background: transparent;
-      margin-top: 30px;
-    }
-    @media (max-width: 800px) {
-      main {
-        padding: 26px 10px 22px 10px;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NMhelper privacy policy — school class strength app for heads and teachers."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)" />
+    <title>Privacy Policy — NMhelper</title>
+    <link rel="icon" href="logo192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Light (default) — matches NMhelper app */
+      :root {
+        color-scheme: light dark;
+        --primary: #0050b3;
+        --primary-soft: #e8f1fc;
+        --accent: #b45309;
+        --accent-soft: #fffbeb;
+        --bg: #f4f7fb;
+        --surface: #ffffff;
+        --text: #0f172a;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --hero-bg: linear-gradient(180deg, #e8f1fc 0%, #f4f7fb 100%);
+        --contact-bg: linear-gradient(135deg, #0050b3, #003a80);
+        --contact-text: #ffffff;
+        --mail-bg: #ffffff;
+        --mail-text: #0050b3;
+        --radius: 12px;
+        --max: 920px;
       }
-      header {
-        padding: 28px 0 18px 0;
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --primary: #60a5fa;
+          --primary-soft: #1e3a5f;
+          --accent: #fbbf24;
+          --accent-soft: #3d3018;
+          --bg: #0b1120;
+          --surface: #151d2e;
+          --text: #f1f5f9;
+          --muted: #94a3b8;
+          --border: #2d3a4f;
+          --hero-bg: linear-gradient(180deg, #151d2e 0%, #0b1120 100%);
+          --contact-bg: linear-gradient(135deg, #1e40af, #0b1120);
+          --contact-text: #f1f5f9;
+          --mail-bg: #f1f5f9;
+          --mail-text: #003a80;
+        }
       }
-    }
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 2rem;
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
       }
-      h2 {
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 1rem;
+        line-height: 1.7;
+        background: var(--bg);
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: var(--primary);
+      }
+
+      .bar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.85rem 1.5rem;
+        background: color-mix(in srgb, var(--surface) 90%, transparent);
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(10px);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      .brand img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+      }
+
+      .bar-link {
+        font-size: 0.875rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: var(--primary);
+      }
+
+      .bar-link:hover {
+        text-decoration: underline;
+      }
+
+      .hero {
+        background: var(--hero-bg);
+        border-bottom: 1px solid var(--border);
+        padding: 2.75rem 1.5rem 2.25rem;
+      }
+
+      .hero-inner {
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        margin: 0 0 0.75rem;
+        padding: 0.25rem 0.65rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--primary);
+        background: var(--primary-soft);
+        border-radius: 6px;
+      }
+
+      .hero h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.75rem, 4vw, 2.35rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1.2;
+      }
+
+      .hero .sub {
+        margin: 0;
+        max-width: 36rem;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .hero .date {
+        margin: 1rem 0 0;
+        font-size: 0.875rem;
+        color: var(--muted);
+      }
+
+      .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 2rem 1.5rem 3rem;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 2.5rem;
+        align-items: start;
+      }
+
+      @media (max-width: 768px) {
+        .wrap {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+          padding-top: 1.25rem;
+        }
+      }
+
+      .toc {
+        position: sticky;
+        top: 4.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .toc {
+          position: static;
+          padding-bottom: 0.5rem;
+          border-bottom: 1px solid var(--border);
+        }
+        .toc nav {
+          flex-direction: row !important;
+          flex-wrap: wrap;
+          gap: 0.35rem;
+        }
+        .toc a {
+          font-size: 0.78rem !important;
+          padding: 0.35rem 0.6rem !important;
+        }
+      }
+
+      .toc-title {
+        margin: 0 0 0.65rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--muted);
+      }
+
+      .toc nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.15rem;
+      }
+
+      .toc a {
+        display: block;
+        padding: 0.4rem 0.5rem;
+        border-radius: 6px;
+        font-size: 0.84rem;
+        font-weight: 500;
+        color: var(--muted);
+        text-decoration: none;
+        transition: color 0.15s, background 0.15s;
+      }
+
+      .toc a:hover,
+      .toc a:focus-visible {
+        color: var(--primary);
+        background: var(--primary-soft);
+      }
+
+      .sections {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .section {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1.35rem 1.5rem;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        margin-bottom: 0.85rem;
+      }
+
+      .section-head svg {
+        flex-shrink: 0;
+        width: 22px;
+        height: 22px;
+        stroke: var(--primary);
+        stroke-width: 2;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .section h2 {
+        margin: 0;
         font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
       }
-      main {
-        padding: 14px 2vw 16px 2vw;
-      }
-    }
-    /* Custom scrollbar for modern browsers */
-    ::-webkit-scrollbar {
-      width: 10px;
-      background: #eaf0fa;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #b6d0f7;
-      border-radius: 7px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Privacy Policy</h1>
-    <p>Effective Date: June 5, 2025</p>
-  </header>
 
-  <main>
-    <section>
-      <h2>1. Introduction</h2>
+      .section p {
+        margin: 0 0 0.75rem;
+        font-size: 0.95rem;
+      }
+
+      .section p:last-child {
+        margin-bottom: 0;
+      }
+
+      .section ul {
+        margin: 0.25rem 0 0;
+        padding-left: 1.2rem;
+        font-size: 0.95rem;
+      }
+
+      .section li {
+        margin-bottom: 0.4rem;
+      }
+
+      .section li::marker {
+        color: var(--primary);
+      }
+
+      .section strong {
+        font-weight: 600;
+        color: var(--text);
+      }
+
+      .note {
+        margin-top: 0.85rem;
+        padding: 0.85rem 1rem;
+        border-radius: 8px;
+        background: var(--accent-soft);
+        border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+        font-size: 0.9rem;
+        color: var(--text);
+      }
+
+      .note p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+
+      .section.contact {
+        background: var(--contact-bg);
+        border: none;
+        color: var(--contact-text);
+      }
+
+      .section.contact .section-head svg {
+        stroke: var(--contact-text);
+      }
+
+      .section.contact h2,
+      .section.contact p {
+        color: var(--contact-text);
+      }
+
+      .section.contact p {
+        opacity: 0.92;
+      }
+
+      .btn-mail {
+        display: inline-block;
+        margin-top: 0.5rem;
+        padding: 0.6rem 1.1rem;
+        background: var(--mail-bg);
+        color: var(--mail-text);
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+
+      .btn-mail:hover {
+        opacity: 0.92;
+      }
+
+      footer {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 1.5rem 1.5rem 2.5rem;
+        text-align: center;
+        font-size: 0.85rem;
+        color: var(--muted);
+        border-top: 1px solid var(--border);
+      }
+
+      footer p {
+        margin: 0.25rem 0;
+      }
+
+      footer a {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bar">
+      <a class="brand" href="https://nmhelper.in" rel="noopener noreferrer">
+        <img src="logo192.png" width="36" height="36" alt="" />
+        <span>NMhelper</span>
+      </a>
+      <a class="bar-link" href="https://nmhelper.in">nmhelper.in</a>
+    </header>
+
+    <div class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Privacy</p>
+        <h1>Privacy Policy</h1>
+        <p class="sub">
+          How we handle information in the NMhelper school strength app (web and Android).
+        </p>
+        <p class="date">Effective date: 5 June 2025</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <aside class="toc" aria-label="Contents">
+        <p class="toc-title">Contents</p>
+        <nav>
+          <a href="#intro">Introduction</a>
+          <a href="#collect">Data we collect</a>
+          <a href="#who">Who enters data</a>
+          <a href="#use">How we use data</a>
+          <a href="#children">Children</a>
+          <a href="#security">Security</a>
+          <a href="#offline">Offline sync</a>
+          <a href="#changes">Updates</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </aside>
+
+      <main class="sections">
+        <article class="section" id="intro">
+          <div class="section-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+            </svg>
+            <h2>1. Introduction</h2>
+          </div>
+          <p>
+            <strong>NMhelper</strong> helps schools record daily class strength (boys and girls per
+            division). Authorized staff sign in with a school account. The app can work offline and
+            sync when the internet is available.
+          </p>
+        </article>
+
+        <article class="section" id="collect">
+          <div class="section-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+              <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" />
+            </svg>
+            <h2>2. What data we collect</h2>
+          </div>
+          <ul>
+            <li>
+              <strong>Account data</strong> — name and username for heads, teachers, and admins.
+              Passwords are stored <strong>hashed</strong> on our servers.
+            </li>
+            <li>
+              <strong>Class strength</strong> — boys/girls counts per division and school settings
+              (such as class limits) set by your administrator.
+            </li>
+          </ul>
+          <div class="note">
+            <p>
+              We do not collect student names, photos, phone numbers, or device location.
+            </p>
+          </div>
+        </article>
+
+        <article class="section" id="who">
+          <div class="section-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            <h2>3. Who can enter data</h2>
+          </div>
+          <p>
+            Only authorized <strong>school heads</strong> and <strong>teachers</strong> can add or
+            change strength data. Your school admin controls accounts and access.
+          </p>
+        </article>
+
+        <article class="section" id="use">
+          <div class="section-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+            </svg>
+            <h2>4. How we use data</h2>
+          </div>
+          <p>
+            Data is used for <strong>school administration and reporting</strong> only. We do not
+            sell or share it with advertisers or unrelated third parties.
+          </p>
+        </article>
+
+        <article class="section" id="children">
+          <div class="section-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <h2>5. Children’s privacy</h2>
+          </div>
+          <p>
+            We do not build student profiles. Stored information is <strong>class-level counts</strong>,
+            not individual student identity data.
+          </p>
+        </article>
+
+        <article class="section" id="security">
+          <div class="section-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+              <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+            <h2>6. Data security</h2>
+          </div>
+          <p>
+            We use sign-in tokens, hashed passwords, and secured hosting. Keep school login details
+            private. No online service can guarantee perfect security.
+          </p>
+        </article>
+
+        <article class="section" id="offline">
+          <div class="section-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 18h1" />
+              <path d="M12 2v2M19 9l1.5 1.5M22 16h-2" />
+            </svg>
+            <h2>7. Offline use and sync</h2>
+          </div>
+          <p>
+            Teachers may save strength while offline. Updates are held on the device and sent to our
+            server when connectivity returns. Only strength-related data is queued.
+          </p>
+        </article>
+
+        <article class="section" id="changes">
+          <div class="section-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 2v6h-6M3 12a9 9 0 0 1 15-6.7L21 8M3 22v-6h6M21 12a9 9 0 0 1-15 6.7L3 16" />
+            </svg>
+            <h2>8. Changes to this policy</h2>
+          </div>
+          <p>
+            We may update this page. The effective date above will change when we do. Continued use
+            of NMhelper means you accept the updated policy.
+          </p>
+        </article>
+
+        <article class="section contact" id="contact">
+          <div class="section-head">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <path d="m22 6-10 7L2 6" />
+            </svg>
+            <h2>9. Contact us</h2>
+          </div>
+          <p>Questions about privacy or your school’s data?</p>
+          <a class="btn-mail" href="mailto:nishalamv@gmail.com">nishalamv@gmail.com</a>
+        </article>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2025–2026 NMhelper</p>
       <p>
-        NmHelper is an educational app designed to help schools manage class strength details. We respect your privacy and are committed to being transparent about the data we collect.
+        <a href="https://nmhelper.in">nmhelper.in</a>
       </p>
-    </section>
-
-    <section>
-      <h2>2. What Data We Collect</h2>
-      <ul>
-        <li><strong>Class Strength Information</strong> (number of boys and girls per class)</li>
-      </ul>
-      <p>No personal information such as name, email, phone number, or location is collected.</p>
-    </section>
-
-    <section>
-      <h2>3. Who Can Enter Data</h2>
-      <p>Only authorized users—such as Heads of Schools and Teachers—can input class strength data into the app.</p>
-    </section>
-
-    <section>
-      <h2>4. How We Use the Data</h2>
-      <p>The data collected is used solely for administrative and analytical purposes within the school system. We do not share or sell any information to third parties.</p>
-    </section>
-
-    <section>
-      <h2>5. Children’s Privacy</h2>
-      <p>NmHelper does not collect any personal data from children or students. The data stored is class-level information only.</p>
-    </section>
-
-    <section>
-      <h2>6. Data Security</h2>
-      <p>We implement reasonable measures to protect the data within the app from unauthorized access.</p>
-    </section>
-
-    <section>
-      <h2>7. Contact Us</h2>
-      <p>If you have any questions about this Privacy Policy, please contact us at <strong>nishalamv@gmail.com</strong>.</p>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 NmHelper App. All rights reserved.
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
