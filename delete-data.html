@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Request deletion of your NMhelper account and school data — NMhelper privacy."
+    />
+    <link rel="canonical" href="https://privacy.nmhelper.in/delete-data.html" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0b1120" media="(prefers-color-scheme: dark)" />
+    <title>Request data deletion — NMhelper</title>
+    <link rel="icon" href="logo192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --primary: #0050b3;
+        --primary-soft: #e8f1fc;
+        --accent-soft: #fffbeb;
+        --bg: #f4f7fb;
+        --surface: #ffffff;
+        --text: #0f172a;
+        --muted: #64748b;
+        --border: #e2e8f0;
+        --hero-bg: linear-gradient(180deg, #e8f1fc 0%, #f4f7fb 100%);
+        --contact-bg: linear-gradient(135deg, #0050b3, #003a80);
+        --contact-text: #ffffff;
+        --mail-bg: #ffffff;
+        --mail-text: #0050b3;
+        --radius: 12px;
+        --max: 720px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --primary: #60a5fa;
+          --primary-soft: #1e3a5f;
+          --accent-soft: #3d3018;
+          --bg: #0b1120;
+          --surface: #151d2e;
+          --text: #f1f5f9;
+          --muted: #94a3b8;
+          --border: #2d3a4f;
+          --hero-bg: linear-gradient(180deg, #151d2e 0%, #0b1120 100%);
+          --contact-bg: linear-gradient(135deg, #1e40af, #0b1120);
+          --contact-text: #f1f5f9;
+          --mail-bg: #f1f5f9;
+          --mail-text: #003a80;
+        }
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 1rem;
+        line-height: 1.7;
+        background: var(--bg);
+        color: var(--text);
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: var(--primary);
+      }
+
+      .bar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.85rem 1.5rem;
+        background: color-mix(in srgb, var(--surface) 90%, transparent);
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(10px);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        text-decoration: none;
+        color: var(--text);
+        font-weight: 700;
+        font-size: 1rem;
+      }
+
+      .brand img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+      }
+
+      .bar-link {
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-decoration: none;
+      }
+
+      .hero {
+        background: var(--hero-bg);
+        padding: 2.5rem 1.5rem 2rem;
+      }
+
+      .hero-inner {
+        max-width: var(--max);
+        margin: 0 auto;
+      }
+
+      .eyebrow {
+        margin: 0 0 0.35rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--primary);
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.6rem, 4vw, 2rem);
+        line-height: 1.2;
+      }
+
+      .sub {
+        margin: 0;
+        color: var(--muted);
+        max-width: 42rem;
+      }
+
+      main {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 1.5rem 1.5rem 2.5rem;
+      }
+
+      .panel {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1.25rem 1.35rem;
+        margin-bottom: 1rem;
+      }
+
+      .panel h2 {
+        margin: 0 0 0.65rem;
+        font-size: 1.05rem;
+      }
+
+      .panel p,
+      .panel li {
+        margin: 0 0 0.65rem;
+        color: var(--text);
+      }
+
+      .panel ul {
+        margin: 0;
+        padding-left: 1.25rem;
+      }
+
+      .panel li:last-child {
+        margin-bottom: 0;
+      }
+
+      .note {
+        margin-top: 0.85rem;
+        padding: 0.85rem 1rem;
+        border-radius: 8px;
+        background: var(--accent-soft);
+        border: 1px solid color-mix(in srgb, #b45309 35%, transparent);
+        font-size: 0.9rem;
+      }
+
+      .note p {
+        margin: 0;
+      }
+
+      .cta {
+        margin-top: 1.5rem;
+        padding: 1.35rem 1.35rem;
+        border-radius: var(--radius);
+        background: var(--contact-bg);
+        color: var(--contact-text);
+      }
+
+      .cta h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.1rem;
+        color: var(--contact-text);
+      }
+
+      .cta p {
+        margin: 0 0 1rem;
+        opacity: 0.92;
+        color: var(--contact-text);
+      }
+
+      .btn-mail {
+        display: inline-block;
+        padding: 0.65rem 1.15rem;
+        background: var(--mail-bg);
+        color: var(--mail-text);
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-decoration: none;
+        border-radius: 8px;
+      }
+
+      .btn-mail:hover {
+        opacity: 0.92;
+      }
+
+      .links {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+      }
+
+      footer {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 0 1.5rem 2.5rem;
+        text-align: center;
+        font-size: 0.85rem;
+        color: var(--muted);
+        border-top: 1px solid var(--border);
+        padding-top: 1.5rem;
+      }
+
+      footer p {
+        margin: 0.25rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bar">
+      <a class="brand" href="https://nmhelper.in" rel="noopener noreferrer">
+        <img src="logo192.png" width="36" height="36" alt="" />
+        <span>NMhelper</span>
+      </a>
+      <a class="bar-link" href="./">Privacy policy</a>
+    </header>
+
+    <div class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Your data</p>
+        <h1>Request data deletion</h1>
+        <p class="sub">
+          School staff and school contacts can ask us to delete NMhelper accounts and related data
+          stored on our servers.
+        </p>
+      </div>
+    </div>
+
+    <main>
+      <article class="panel">
+        <h2>What we can delete</h2>
+        <p>Depending on your request, we remove data from our servers, including:</p>
+        <ul>
+          <li>Head or teacher <strong>account</strong> (name, username, hashed password)</li>
+          <li><strong>Teachers and classes</strong> linked to a school head account</li>
+          <li><strong>Class strength records</strong> (daily boys/girls counts and related history)</li>
+          <li>School <strong>settings</strong> stored for that account (for example class limits)</li>
+        </ul>
+        <div class="note">
+          <p>
+            We do not store student names or photos. Deleting an account does not remove files you
+            already saved on your own device (for example exported reports). Uninstalling the app
+            clears local app storage on your phone.
+          </p>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h2>Who can request deletion</h2>
+        <ul>
+          <li>The <strong>signed-in user</strong> (head or teacher) for their own account</li>
+          <li>A <strong>school head</strong> for their school’s data (including teacher accounts they manage)</li>
+          <li>An authorized <strong>school contact</strong> (for example principal or office) on behalf of the school</li>
+        </ul>
+        <p>
+          If you are not sure which username to quote, include your school name and your role — we
+          will confirm before deleting anything.
+        </p>
+      </article>
+
+      <article class="panel">
+        <h2>How to request deletion</h2>
+        <p>Email us from an address your school recognizes. Include:</p>
+        <ul>
+          <li>School / institution name</li>
+          <li>Your role (head, teacher, or school contact)</li>
+          <li>NMhelper <strong>username</strong> (and display name if known)</li>
+          <li>What to delete (single teacher, whole school head account, etc.)</li>
+        </ul>
+        <p>
+          We may reply once to verify you are authorized. We aim to complete verified requests
+          within <strong>30 days</strong>.
+        </p>
+      </article>
+
+      <article class="cta" id="request">
+        <h2>Send a deletion request</h2>
+        <p>
+          Use the button below to open your email app with a template. You can edit the message
+          before sending.
+        </p>
+        <a
+          class="btn-mail"
+          id="delete-mailto"
+          href="mailto:nishalamv@gmail.com?subject=NMhelper%20data%20deletion%20request&amp;body=Please%20delete%20my%20NMhelper%20data.%0A%0ASchool%20%2F%20institution%20name%3A%0AMy%20role%20(head%20%2F%20teacher%20%2F%20school%20contact)%3A%0AUsername%20in%20NMhelper%3A%0ARegistered%20name%20(if%20any)%3A%0A%0AWhat%20to%20delete%20(my%20account%20%2F%20teacher%20account%20%2F%20entire%20school)%3A%0A%0AI%20confirm%20I%20am%20authorized%20to%20request%20this%20deletion.%0A%0AAdditional%20notes%20(optional)%3A%0A"
+          >Email nishalamv@gmail.com</a
+        >
+        <p class="links">
+          <a href="./">Full privacy policy</a>
+          ·
+          <a href="https://nmhelper.in">nmhelper.in</a>
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; 2025–2026 NMhelper</p>
+      <p>Developer: Nishal K</p>
+    </footer>
+  </body>
+</html>
